@@ -1,0 +1,64 @@
+/* remove margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* layout css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_column {
+  justify-content: center;
+}
+
+.justify_left {
+  justify-content: left;
+}
+
+.justify_space_between {
+  justify-content: space-between;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+/* size css */
+.width_100 {
+  width: 100%;
+}
+
+/* colour css */
+.bg_marine_blue {
+  background-color: #036f8c;
+}
+
+.bg_bright_pink {
+  background-color: #ff0084;
+}
+
+.bg_yellow {
+  background-color: yellow;
+}
+
+.bg_beige {
+  background-color: beige;
+}
+
+.text_white {
+  color: white;
+}
