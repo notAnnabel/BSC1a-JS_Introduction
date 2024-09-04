@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+}
+
 img {
   width: 100%;
 }
@@ -12,6 +16,15 @@ a {
   all: unset;
   cursor: pointer;
   text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
+}
+
+.clickable {
+  user-select: none;
+  cursor: pointer;
 }
 
 /* layout css */
@@ -42,6 +55,10 @@ a {
   width: 100%;
 }
 
+.height_100 {
+  height: 100%;
+}
+
 /* colour css */
 .bg_marine_blue {
   background-color: #036f8c;
@@ -57,6 +74,10 @@ a {
 
 .bg_beige {
   background-color: beige;
+}
+
+.bg_green {
+  background-color: rgb(113, 220, 113);
 }
 
 .text_white {
