@@ -35,11 +35,15 @@ li {
 }
 
 .flex_column {
-  justify-content: center;
+  flex-direction: column;
 }
 
 .justify_left {
   justify-content: left;
+}
+
+.align_start {
+  align-items: flex-start;
 }
 
 .justify_space_between {
@@ -50,13 +54,8 @@ li {
   flex-wrap: wrap;
 }
 
-/* size css */
-.width_100 {
-  width: 100%;
-}
-
-.height_100 {
-  height: 100%;
+.rounded_border {
+  border-radius: 10px;
 }
 
 /* colour css */
@@ -80,6 +79,24 @@ li {
   background-color: rgb(113, 220, 113);
 }
 
+.bg_soft_purple {
+  background-color: rgb(159, 81, 159);
+}
+
+
+.bg_soft_purple_a50 {
+  background-color: rgba(159, 81, 159, 0.5);
+}
+
 .text_white {
   color: white;
+}
+
+/* opacity */
+.opacity_50 {
+  opacity: 0.5;
+}
+
+.opacity_100 {
+  opacity: 1;
 }
