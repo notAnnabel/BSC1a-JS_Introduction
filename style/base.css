@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -17,28 +18,4 @@ a {
 .clickable {
   user-select: none;
   cursor: pointer;
-}
-
-/* layout css */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-/* colour css */
-.bg-marine_blue {
-  background-color: #036f8c;
-}
-
-.bg-bright_pink {
-  background-color: #ff0084;
-}
-
-.text-white {
-  color: white;
 }
