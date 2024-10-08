@@ -1,16 +1,27 @@
+const image = document.getElementById("character");
 const paragraph = document.getElementById("my-paragraph");
 const button = document.getElementById("my-button");
 
-let buttonClicks = 0;
+const imageOne = "assets/images/bulbasaur.avif";
+const imageTwo = "assets/images/charmander.avif";
+const imageThree = "assets/images/squirtle.avif";
 
-function changeText() {
+let index = 0;
+
+function onclick() {
   // add one more tho the number of button clicks
-  buttonClicks = buttonClicks + 1;
+  index = index + 1;
 
-  // display it on the website
-  paragraph.innerHTML = "I have been modified " + buttonClicks + " time(s)";
+  if (index == 1) {
+    image.src = imageOne;
+  }
+  if (index == 2) {
+    image.src = imageTwo;
+  }
+  if (index == 3) {
+    index = 0;
+    image.src = imageThree;
+  }
 }
 
-button.onclick = changeText;
-
-button = 3;
+button.onclick = onclick;

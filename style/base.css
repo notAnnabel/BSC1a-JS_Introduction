@@ -15,6 +15,11 @@ a {
   text-decoration: underline;
 }
 
+img {
+  width: 300px;
+  height: 300px;
+}
+
 .clickable {
   user-select: none;
   cursor: pointer;
