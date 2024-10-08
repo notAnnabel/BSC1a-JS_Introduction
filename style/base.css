@@ -1,0 +1,21 @@
+/* remove margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.clickable {
+  user-select: none;
+  cursor: pointer;
+}
