@@ -1,0 +1,44 @@
+/* remove margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.clickable {
+  user-select: none;
+  cursor: pointer;
+}
+
+/* layout css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* colour css */
+.bg-marine_blue {
+  background-color: #036f8c;
+}
+
+.bg-bright_pink {
+  background-color: #ff0084;
+}
+
+.text-white {
+  color: white;
+}
