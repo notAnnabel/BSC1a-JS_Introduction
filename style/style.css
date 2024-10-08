@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 /* css for sizes */
 .width-full {
   width: 100vw;
