@@ -19,6 +19,11 @@
   height: 200px;
 }
 
+.small {
+  width: 100px;
+  height: 100px;
+}
+
 /* flex styles */
 .container {
   display: flex;
@@ -28,4 +33,8 @@
 
 .flex-column {
   flex-direction: column;
+}
+
+.justify-left {
+  justify-content: left;
 }
