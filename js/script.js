@@ -2,9 +2,13 @@ const image = document.getElementById("character");
 const paragraph = document.getElementById("my-paragraph");
 const button = document.getElementById("my-button");
 
-const imageOne = "assets/images/bulbasaur.avif";
-const imageTwo = "assets/images/charmander.avif";
-const imageThree = "assets/images/squirtle.avif";
+const imageOne = "assets/characters/bulbasaur.avif";
+const imageTwo = "assets/characters/charmander.avif";
+const imageThree = "assets/characters/squirtle.avif";
+
+function changeText() {
+  paragraph.innerHTML = "New Text";
+}
 
 let index = 0;
 
