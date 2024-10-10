@@ -19,3 +19,12 @@ a {
   user-select: none;
   cursor: pointer;
 }
+
+
+#mybutton {
+  all: unset;
+  padding: 5px;
+  background-color:blueviolet;
+  cursor: pointer;
+  box-shadow: 2px 2px rgb(47, 50, 120);
+}
