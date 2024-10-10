@@ -11,3 +11,8 @@
 .text-white {
   color: white;
 }
+
+.mybutton {
+  border-width: 2px;
+  color: aqua;
+}
