@@ -38,3 +38,8 @@
 .justify-left {
   justify-content: left;
 }
+
+/* draggables */
+.draggable {
+  position: relative;
+}
