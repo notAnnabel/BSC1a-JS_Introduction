@@ -1,15 +1,22 @@
+// store which character is where in the constant
+const imageOne = "assets/Popplio.png"
+const imageTwo = "assets/Brionne.png"
+const imageThree = "assets/primarina.png"
+
 //define sources for each character choice
 
 const myButton = document.getElementById("my-button");
 const myParagraph = document.getElementById("my-paragraph");
-const characterImage = document.getElementedById("character-img");
+const characterImage = document.getElementById("character-img");
 
-// store which character is where in the constant
-const imageOne = "assets/ame-kangel.webp"
-const imageTwo = "assets/kangel.jpeg"
-const imageThree = "assets/glitched-monster.webp"
 
-let characterCounter = 0;
+// constants that store sounds
+const soundOne = document.getElementById("assets/popplio-sound-_)-made-with-Voicemod.mp3");
+const soundTwo = document.getElementById("assets/brionnecry_7c0c1ef75178316.mp3");
+const soundThree = document.getElementById("assets/primarinacr_p5r35773.mp3")
+
+
+let characterCounter = 1;
 
 //document.getElementById("my-button").addEventListener("click", clickFunction);
 
@@ -24,27 +31,29 @@ let characterCounter = 0;
 function clickFunction() {
 
     characterCounter = characterCounter + 1;
+    console.log('the button has been clicked');
+    myParagraph.innerHTML = "I am on character " + characterCounter;
 
     if (characterCounter > 3) {
         characterCounter = 1;
     }
+    
     if (characterCounter === 1) {
         characterImage.src = imageOne;
+        soundOne.playAudio();
         return;
     }
     if (characterCounter === 2) {
         characterImage.src = imageTwo;
+        soundTwo.playAudio();
         return;
     }
     if (characterCounter === 3) {
         characterImage.src = imageThree;
+        soundThree.playAudio();
         return;
     }
 
-
-
-    // characterImage.src = "assets/kangel.jpeg" 
-    myParagraph.innerHTML = "I have been clicked " + characterCounter + " times";
 }
 
 myButton.onclick = clickFunction;
