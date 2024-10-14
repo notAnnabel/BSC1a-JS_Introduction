@@ -11,14 +11,14 @@ const characterImage = document.getElementById("character-img");
 
 
 // constants that store sounds
-const soundOne = document.getElementById("assets/popplio-sound-_)-made-with-Voicemod.mp3");
-const soundTwo = document.getElementById("assets/brionnecry_7c0c1ef75178316.mp3");
-const soundThree = document.getElementById("assets/primarinacr_p5r35773.mp3")
+const soundOne = new Audio("assets/popplio-sound-_)-made-with-Voicemod.mp3");
+const soundTwo = new Audio("assets/brionnecry_7c0c1ef75178316.mp3");
+const soundThree = new Audio("assets/primarinacr_p5r35773.mp3");
 
 
-let characterCounter = 1;
 
-//document.getElementById("my-button").addEventListener("click", clickFunction);
+
+document.getElementById("my-button").addEventListener("click", clickFunction);
 
 /**
  * 
@@ -28,8 +28,11 @@ let characterCounter = 1;
  * @returns when character is chosen
  * ... if it worked
  */
-function clickFunction() {
 
+
+let characterCounter = 1;
+
+function clickFunction() {
     characterCounter = characterCounter + 1;
     console.log('the button has been clicked');
     myParagraph.innerHTML = "I am on character " + characterCounter;
@@ -40,20 +43,20 @@ function clickFunction() {
     
     if (characterCounter === 1) {
         characterImage.src = imageOne;
-        soundOne.playAudio();
+        soundOne.play();
         return;
     }
     if (characterCounter === 2) {
         characterImage.src = imageTwo;
-        soundTwo.playAudio();
+        soundTwo.play();
         return;
     }
     if (characterCounter === 3) {
         characterImage.src = imageThree;
-        soundThree.playAudio();
+        soundThree.play();
         return;
     }
 
 }
 
-myButton.onclick = clickFunction;
+myButton.onclick = clickFunction();
