@@ -16,7 +16,15 @@ const soundTwo = new Audio("assets/brionnecry_7c0c1ef75178316.mp3");
 const soundThree = new Audio("assets/primarinacr_p5r35773.mp3");
 
 
+// alt text
+const altText1 = 'this is popplio';
+const altText2 = 'this isbrionne';
+const altText3 = 'this is primarina';
 
+// define text paragraph :)
+const characterName1 = 'popplio';
+const characterName2 = 'brionne';
+const characterName3 = 'Primarina';
 
 document.getElementById("my-button").addEventListener("click", clickFunction);
 
@@ -43,17 +51,23 @@ function clickFunction() {
     
     if (characterCounter === 1) {
         characterImage.src = imageOne;
-        soundOne.play();
+        characterImage.alt = altText1;
+        myParagraph.innerHTML = characterName1;
+        // soundOne.play();
         return;
     }
     if (characterCounter === 2) {
         characterImage.src = imageTwo;
-        soundTwo.play();
+        characterImage.alt = altText2;
+        myParagraph.innerHTML = characterName2;
+        // soundTwo.play();
         return;
     }
     if (characterCounter === 3) {
         characterImage.src = imageThree;
-        soundThree.play();
+        characterImage.alt = altText1;
+        myParagraph.innerHTML = characterName3;
+        // soundThree.play();
         return;
     }
 
