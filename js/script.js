@@ -1,7 +1,5 @@
 // store which character is where in the constant
-const imageOne = "assets/Popplio.png"
-const imageTwo = "assets/Brionne.png"
-const imageThree = "assets/primarina.png"
+const imageSources =["assets/Popplio.png", "assets/brionne.png", "assets/primarina.png"];
 
 //define sources for each character choice
 
@@ -17,60 +15,70 @@ const soundThree = new Audio("assets/primarinacr_p5r35773.mp3");
 
 
 // alt text
-const altText1 = 'this is popplio';
-const altText2 = 'this isbrionne';
-const altText3 = 'this is primarina';
+const altText =['this is popplio','this is brionne','this is primarina'];
+
 
 // define text paragraph :)
-const characterName1 = 'popplio';
-const characterName2 = 'brionne';
-const characterName3 = 'Primarina';
+const characterName = ['Popplio', 'Brionne', 'Primarina'];
 
-document.getElementById("my-button").addEventListener("click", clickFunction);
+// submit button
+const submitButton = document.getElementById("name-change-button");
+ 
 
-/**
- * 
- * 
- * update character counter and display next character
- * sets counter back to 1 if 3 has been chosen
- * @returns when character is chosen
- * ... if it worked
- */
+// input field
+const inputField = document.getElementById("name-change-input");
 
 
-let characterCounter = 1;
+// to accomodate for the pokeball, popplio is at 1
+let characterCounter = 0;
 
+
+// change the text onscreen below the pokemon/pokeball
+function submitting() {
+    myParagraph.innerHTML = inputField.value;
+}
+
+// calls submit function above
+submitButton.onclick = submitting;
+
+
+// switch character and below text and update according to counter
 function clickFunction() {
     characterCounter = characterCounter + 1;
-    console.log('the button has been clicked');
     myParagraph.innerHTML = "I am on character " + characterCounter;
-
+    
     if (characterCounter > 3) {
         characterCounter = 1;
     }
+    console.log('the button has been clicked', characterCounter);
+    /* characterImage.src = imageSources[characterCounter -1];
+    characterImage.alt = altText[characterCounter -1];
+    myParagraph.innerHTML = characterName[characterCounter -1]; */
+    
     
     if (characterCounter === 1) {
-        characterImage.src = imageOne;
-        characterImage.alt = altText1;
-        myParagraph.innerHTML = characterName1;
+        characterImage.src = imageSources[0];
+        characterImage.alt = altText[0];
+        myParagraph.innerHTML = characterName[0];
         // soundOne.play();
         return;
     }
     if (characterCounter === 2) {
-        characterImage.src = imageTwo;
-        characterImage.alt = altText2;
-        myParagraph.innerHTML = characterName2;
+        characterImage.src = imageSources[1];
+        characterImage.alt = altText[1];
+        myParagraph.innerHTML = characterName[1];
         // soundTwo.play();
         return;
     }
     if (characterCounter === 3) {
-        characterImage.src = imageThree;
-        characterImage.alt = altText1;
-        myParagraph.innerHTML = characterName3;
+        characterImage.src = imageSources[2];
+        characterImage.alt = altText[2];
+        myParagraph.innerHTML = characterName[2];
         // soundThree.play();
         return;
     }
 
-}
+} 
 
-myButton.onclick = clickFunction();
+// calls clickFunction
+myButton.onclick = clickFunction;

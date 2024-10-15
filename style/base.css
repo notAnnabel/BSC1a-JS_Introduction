@@ -32,3 +32,7 @@ a {
   width: 500px;
   height: 500px;
 }
+
+#name-change-button {
+  margin: 10px;
+}
