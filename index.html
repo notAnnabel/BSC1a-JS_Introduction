@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- style file -->
-    <link rel="stylesheet" href="./style/base.css" />
-    <link rel="stylesheet" href="./style/colour.css" />
-    <link rel="stylesheet" href="./style/layout.css" />
-    <script src="js/script.js" defer></script>
-    <!-- script link -->
-    <title>HTML JavaScript</title>
-  </head>
-  <body>
-    <!-- main div - full width and full height -->
-    <div class="container width-full height-full">
-      <!-- inner div - floating in middle of webpage -->
-      <div class="container flex-column width-half height-500px bg-marine_blue text-white">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- style file -->
+  <link rel="stylesheet" href="./style/base.css" />
+  <link rel="stylesheet" href="./style/colour.css" />
+  <link rel="stylesheet" href="./style/layout.css" />
+  <script src="js/script.js" defer></script>
+  <script src="js/dragdrop.js" defer></script>
+  <!-- script link -->
+  <title>HTML JavaScript</title>
+</head>
+
+<body>
+  <!-- main div - full width and full height -->
+  <div class="container width-full height-full">
+    <!-- inner div - floating in middle of webpage -->
+    <div class="container width-half height-500px bg-marine_blue text-white">
+
+      <div class="container flex-column">
+        <img draggable="True" class="complement" src="assets/complements/crown.png" alt="a hat">
+        <img draggable="True" class="complement" src="assets/complements/flower-crown.png" alt="flowercrown">
+      </div>
+
+      <div class="container flex-column">
+
         <img id="character-img" src="assets/pokeball.png" alt="pokemon!">
+
         <!-- some text -->
         <p id="my-paragraph">Open the pokeball?</p>
         <button id="my-button" class="mybutton"> click me </button>
-        <div class="container">
-          <input id="name-change-input">
-            <button id="name-change-button" class="clickable">submit</button>
-        </div>
+        <input id="name-change-input">
+        <button id="name-change-button" class="clickable">submit</button>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

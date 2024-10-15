@@ -36,3 +36,15 @@ a {
 #name-change-button {
   margin: 10px;
 }
+
+#complement-one{
+  position: relative;
+  width: 150px;
+  height: 100px;
+}
+
+.complement{
+  position: relative;
+  width: 150px;
+  height: 100px;
+}
