@@ -60,21 +60,21 @@ function clickFunction() {
         characterImage.src = imageSources[0];
         characterImage.alt = altText[0];
         myParagraph.innerHTML = characterName[0];
-        // soundOne.play();
+        soundOne.play();
         return;
     }
     if (characterCounter === 2) {
         characterImage.src = imageSources[1];
         characterImage.alt = altText[1];
         myParagraph.innerHTML = characterName[1];
-        // soundTwo.play();
+        soundTwo.play();
         return;
     }
     if (characterCounter === 3) {
         characterImage.src = imageSources[2];
         characterImage.alt = altText[2];
         myParagraph.innerHTML = characterName[2];
-        // soundThree.play();
+        soundThree.play();
         return;
     }
 
